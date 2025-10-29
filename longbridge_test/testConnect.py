@@ -2,11 +2,7 @@
 from longbridge import OpenAPI
 
 # 手动指定凭证
-api = OpenAPI(
-    app_key="61c12fe09ba7910cd3a65d64a064620d",
-    app_secret="d71fab251c59e4a3ce2baa2901bc18a349326dd44fd9cc6792b8592b0da82b3e",
-    access_token="m_eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb25nYnJpZGdlIiwic3ViIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNzY5NTE1MDY1LCJpYXQiOjE3NjE3MzkwNTYsImFrIjoiNjFjMTJmZTA5YmE3OTEwY2QzYTY1ZDY0YTA2NDYyMGQiLCJhYWlkIjoyMDc1NDgyNiwiYWMiOiJsYl9wYXBlcnRyYWRpbmciLCJtaWQiOjE2MjY5MzIyLCJzaWQiOiJadkY1N1VpbGVNYW56ODdta1JzZVB3PT0iLCJibCI6MywidWwiOjAsImlrIjoibGJfcGFwZXJ0cmFkaW5nXzIwNzU0ODI2In0.j_h0W2IE3UIgpmYesjxPAeydPJmymgeqBzW_-azOPRfJljB4bsvxnBPJe8nMxZ2HQCp5FzwdNiMTU-ri4shmtVDm21PN9vMEcqSrK1mOpAUX55tocokg2AcoF5UVdD9FBlgvV3V5Fa3K80P4HQB1i5bFjOLOx7NrvQViqtQVVcXNmGUiqmbA3jTZxzxAkub1bIcQHZzApaBNGbvs_-hbvfgOLK8fOAOmqnLxe1BbuCsbdFHBBFRLRNxNiGGtwRkYBK3_IL0iXYEfbnFLxga5lMO3dNmeQL-nfmitgAxBUz-OB-aJm5RBdI_Q_QLS4utpm32bz8kPncSx6Dr_V6t950dSyTMrkTFjC3z3-yUKXeph5ht55FTWOwA0zbCSYJGAKbE2PNEoKCZsFtjUJkIQG6D7UIwUubWwuV4uwYs9mBV4O-NPyd1dQLsCN6g8CE9mx4clTkZkylvNuW3-Iog0kEVsqs4Na-33ZGZQyu54gAOGFa9sUj1cKLN-GkVsRO9iSebzGgFxfwI4a-PF5jSJwOSD38CkmUuEjb9cMaS4kDcJIEpA2j6tj8aO49yFBnAuQNAP2Tu3uiOD7inuEdkAOowz2qV5jzUHeucaw6iC2nGillEqdGobg01KBUVAoUIaLFDXKJHzYeZBqM64C01UbmYY2dsnRyV80hB0qHXI0xk",  # 你的 Access Token
-    region="hk"  # 根据你页面显示的 Region 填写
+
 )
 
 # 测试调用：获取账户余额
@@ -17,9 +13,8 @@ print(response)
 from longbridge import OpenAPI
 
 # ---------- 填入你的 Access Token ----------
-ACCESS_TOKEN = "m_eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb25nYnJpZGdlIiwic3ViIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNzY5NTE1MDY1LCJpYXQiOjE3NjE3MzkwNTYsImFrIjoiNjFjMTJmZTA5YmE3OTEwY2QzYTY1ZDY0YTA2NDYyMGQiLCJhYWlkIjoyMDc1NDgyNiwiYWMiOiJsYl9wYXBlcnRyYWRpbmciLCJtaWQiOjE2MjY5MzIyLCJzaWQiOiJadkY1N1VpbGVNYW56ODdta1JzZVB3PT0iLCJibCI6MywidWwiOjAsImlrIjoibGJfcGFwZXJ0cmFkaW5nXzIwNzU0ODI2In0.j_h0W2IE3UIgpmYesjxPAeydPJmymgeqBzW_-azOPRfJljB4bsvxnBPJe8nMxZ2HQCp5FzwdNiMTU-ri4shmtVDm21PN9vMEcqSrK1mOpAUX55tocokg2AcoF5UVdD9FBlgvV3V5Fa3K80P4HQB1i5bFjOLOx7NrvQViqtQVVcXNmGUiqmbA3jTZxzxAkub1bIcQHZzApaBNGbvs_-hbvfgOLK8fOAOmqnLxe1BbuCsbdFHBBFRLRNxNiGGtwRkYBK3_IL0iXYEfbnFLxga5lMO3dNmeQL-nfmitgAxBUz-OB-aJm5RBdI_Q_QLS4utpm32bz8kPncSx6Dr_V6t950dSyTMrkTFjC3z3-yUKXeph5ht55FTWOwA0zbCSYJGAKbE2PNEoKCZsFtjUJkIQG6D7UIwUubWwuV4uwYs9mBV4O-NPyd1dQLsCN6g8CE9mx4clTkZkylvNuW3-Iog0kEVsqs4Na-33ZGZQyu54gAOGFa9sUj1cKLN-GkVsRO9iSebzGgFxfwI4a-PF5jSJwOSD38CkmUuEjb9cMaS4kDcJIEpA2j6tj8aO49yFBnAuQNAP2Tu3uiOD7inuEdkAOowz2qV5jzUHeucaw6iC2nGillEqdGobg01KBUVAoUIaLFDXKJHzYeZBqM64C01UbmYY2dsnRyV80hB0qHXI0xk"
 REGION = "cn"  # cn / hk / us
-# --------------------------------------------------
+ --------------------------------------------------
 
 def main():
     # 创建 OpenAPI 实例，只用 Access Token
